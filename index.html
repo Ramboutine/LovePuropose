@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valentine's Day</title>
+    <title>Domandina...</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       :root {
@@ -77,14 +77,14 @@
         id="valentineQuestion"
         class="text-4xl font-bold italic text-[#bd1e59] my-4"
       >
-        Will you be my Valentine?
+        Vuoi diventare la mia ragazza? 
       </h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button
           id="yesButton"
           class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition"
         >
-          Yes
+          Si
         </button>
         <button
           id="noButton"
@@ -120,12 +120,12 @@
       let fontSize = 20;
 
       const sentences = [
-        "Are you sure?",
-        "Pookie please...",
-        "Don't do this to me :(",
-        "You're breaking my heart 💔",
-        "I'm gonna cry... 😭",
-        "Fine, be that way... 😢",
+        "Puoi ripensarci?",
+        "Per favore bebolina...",
+        "Non farmi questo :(",
+        "Mi stai spezzando il cuore.. 💔",
+        "Sto piangendo... 😭",
+        "Non lo posso accettare... 😢",
       ];
 
       const imagePaths = [
@@ -168,7 +168,7 @@
 
       yesButton.addEventListener("click", () => {
         imageDisplay.src = "./images/image7.gif";
-        valentineQuestion.textContent = "Yay! That's like my pookieee❤️";
+        valentineQuestion.innerHTML = "Siii! Ora siamo felicemente fidanzati! ❤️ </br>Ora dovrai soportarmi per sempre! 😂😂😂";
         responseButtons.style.display = "none";
         confetti();
       });
